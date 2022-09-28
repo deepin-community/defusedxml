@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=defusedxml
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	for PYTHON in $(shell py3versions -r); do\
+	    $$PYTHON ./tests.py; \
+	done

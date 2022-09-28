@@ -1,0 +1,109 @@
+defusedxml (0.7.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+  * Bump debhelper from old 12 to 13.
+    + Drop check for DEB_BUILD_OPTIONS containing "nocheck", since debhelper now
+      does this.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Gordon Ball ]
+  * d/watch: use github as upstream, drop expired signing key
+  * New upstream version 0.7.1
+  * Rebase patches, drop all
+  * Update homepage to github.com/tiran/defusedxml
+  * Rules-requires-root: no
+  * docs: drop (generated) README.html
+  * Standards-Version: 4.6.0
+  * Add autopkgtest
+
+ -- Gordon Ball <gordon@chronitis.net>  Tue, 12 Oct 2021 17:52:18 +0000
+
+defusedxml (0.6.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Name from debian/upstream/metadata.
+  * Set upstream metadata fields: Bug-Database, Repository.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #942945, #936382
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 19 Feb 2020 18:38:19 -0500
+
+defusedxml (0.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ William Grzybowski ]
+  * New upstream version 0.6.0
+  * d/control: add autopkgtest-pkg-python Testsuite
+  * d/control: update debhelper to version 12.
+  * d/control: update Standards-Version to 4.4.0 (No changes needed)
+  * d/copyright: fix copyright authors and years for upstream and debian
+  * d/patches: add patch to remove images avoiding possible privacy breach
+  * d/salsa-ci.yml: add to run CI in Salsa
+
+ -- William Grzybowski <william@grzy.org>  Tue, 23 Jul 2019 19:53:42 -0300
+
+defusedxml (0.5.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Jelmer Vernooĳ ]
+  * Bump debhelper from old 9 to 10.
+  * Re-export upstream signing key without extra signatures.
+  * Add a basic debian/upstream/metadata.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 13 Feb 2018 10:18:18 +0100
+
+defusedxml (0.5.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Jelmer Vernooĳ ]
+  * Bump standards version (no changes).
+  * Bump debhelper version to 9.
+  * Refresh upstream signing key (new subkeys).
+  * debian/watch: properly handle RC releases.
+  * New upstream release.
+  * Add myself to uploaders.
+  * Run tests during build.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 02 Jul 2017 14:19:56 +0000
+
+defusedxml (0.4.1-2) unstable; urgency=medium
+
+  * Added Python 3 support.
+  * Bumped Standards-Version to 3.9.5 (no changes needed)
+  * Updated VCS-* fields to canonical locations.
+  * Added watch file.
+
+ -- Nikolaus Rath <Nikolaus@rath.org>  Sun, 29 Jun 2014 16:38:39 -0700
+
+defusedxml (0.4.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #705691)
+
+ -- Luke Faraone <lfaraone@debian.org>  Thu, 18 Apr 2013 11:15:53 -0400
